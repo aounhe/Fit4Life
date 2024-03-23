@@ -1,110 +1,133 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<h1 style="text-align: center">Fit4Life</h1>
 
-Welcome Houssem Aoun,
+![hero image screenshot](assets/images/responsive-ms4.png)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This is my submission for Milestone project 4. The Fit4life site is a fitness apparel, sportswear, and accessories. Offering gym clothing that is not just stylish and trendy, but comfortable, durable and perfect for your workout sessions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+### User Experience (UX) ###
 
-## Gitpod Reminders
+* As a user, i want to Learning about a hotel and the surrounding area through photos, user reviews, amenity details, and location info.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+* As a visitor, it's important to read the hotels reviews to decied wich one i will book.
 
-`python3 -m http.server`
+* As a visitor, finding hotels that match my needs and preferences, such as price, location, user ratings, amenities, and brand will be wonderful and time saving.
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+### Design ###
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* WireFrames:
+Desktop wireframe.
+![Wireframe](assets/images/Website-wireframe.png)
+* Features:
+Responsive layout on mobile and tablet. Interactive Maps, email.
 
-A blue button should appear to click: _Make Public_,
+### Technologies: ###
 
-Another blue button should appear to click: _Open Browser_.
+- GitHub: [https://github.com/](https://github.com/)
+  - GitHub was used to host the applications repositories.
+- GitPod: [https://www.gitpod.io/](https://www.gitpod.io/)
+  - GitPod served as the integrated development environment used to code the site.
+- HTML: [https://developer.mozilla.org/en-US/docs/Web/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+  - The website uses HTML to input the structure and content.
+- CSS: [https://developer.mozilla.org/en-US/docs/Web/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+  - The website uses CSS to style the HTML elements.
+- Bootstrap 4: [https://getbootstrap.com/](https://getbootstrap.com/)
+  - The website uses the Bootstrap 4 framework to simplify the integration and styling of responsive elements.
+- JavaScript: [https://developer.mozilla.org/en-US/docs/Web/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+  - The site uses JavaScript to enable interactive user events and to incorporate features from the following APIs: Google Maps JavaScript API, Google Maps Embed API.
+- EmailJS: [https://www.emailjs.com/](https://www.emailjs.com/)
+  - EmailJS was use to link the contact form on contact.html to a functioning email account.
+- Google Fonts: [https://fonts.google.com/](https://fonts.google.com/)
+  - The site uses Google Fonts to integrate the Lato font into the website.
+- Fontawesome: [https://fontawesome.com/](https://fontawesome.com/)
+  - The site uses Font Awesome to integrate social media icons into the footer.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+<h2 style="text-align: center">Testing</h2>
 
-To log into the Heroku toolbelt CLI:
+The W3C Markup Validator, W3C CSS and JSHint Validator Services were used to validate the project pages to ensure
+there were no syntax errors.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+* [W3C Markup validator](https://validator.w3.org/#validate_by_input)
+No errors were returned from the HTML validator.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+* [W3C CSS validator](https://jigsaw.w3.org/css-validator/validator)
+No errors were returned from the CSS validator
 
-------
+* [JSHint](https://jshint.com/)
+No errors or warnings shown
 
-## Release History
+* [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/)
+![lighthouse screenshot](assets/images/light-house-60.png)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### General Testing
+- Each feature was developed and tested in its own branch before being merged with master. Branches were subsequently deleted.
+- Each time a feature was added, all the functions were tested to see if there was an impact.
+- The site was sent to friends for feedback and testing.
+- All forms have validation and will not submit without the proper information.
+- .gitignore file has been included to prevent system file commits.
+- The image loading blur has been thoroughly tested and gone through numerous iterations to optimise the smoothness of the transition on different devices and internet speeds.
+- Backup Map functions have been tested in a local deployment.
+- Email error functions have been tested offline as well.
+- External links open in a new tab.
 
-**September 20 2023:** Update Python version to 3.9.17.
+### Mobile Testing
+- I tested the site personally on my Android device, going through the entire process, checking buttons, functions, checking out, etc. I was personally unable to test on iOS.
+- The site was sent to friends and relatives for them to follow the same process. They have tested on their devices, including iOS.
+- Chrome was utilised to inspect the site in mobile format, going through the pages and functions.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+### Desktop Testing
+- The site was developed on a Chromebook and, as such, the majority of testing occurred on Chrome.
+- The site was tested by friends and relatives on numerous desktop devices.
+- The site was marginally tested on other browsers, such as Firefox and Edge.
+- Internet Explorer was not tested and the site was not developed with it in mind as support for the browser is gradually being dropped.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+<h2 style="text-align: center">Deployment</h2>
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### GitHub Pages ###
+The project was deployed to GitHub Pages using the following steps...
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+#### Log in to GitHub and locate the GitHub Repository ####
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+* At the top of the repository section, locate the "Settings" Button on the menu.
+* Scroll down the settings page until you find the "GitHub Pages" section.
+* You will see a message "Pages settings now has its own dedicated tab! Check it out here!" click on the link.
+* Under "Source", click the dropdown and select "Master Branch".The page will refresh.
+* The now published site link in the "GitHub Pages" section will be found at the top of the page.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Forking the GitHub Repository ###
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+#### Log in to GitHub and locate the GitHub Repository ####
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+* At the top of the repository section just above the "Settings" button on the menu, click the "Fork" button.
+  The original repository in your GitHub account should now have duplicated.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+#### Making a Local Clone ####
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+* Log in to GitHub and locate the GitHub repository, under the repository name, click "clone or download".
+* To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+* Open Git Bash
+* Change the current working directory to the location where you want the cloned directory to be made.
+* Type git clone, and then paste the URL you copied in Step 2.
+   * $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+* Press Enter. Your local clone will be created.
+   * $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+<h2 style="text-align: center">Credits</h2>
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+#### Credits ####
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+* [Unsplash.com](https://unsplash.com/)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+#### API ####
 
-------
+* [Google Map Platform](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch)
 
-## FAQ about the uptime script
+#### Wireframe ####
 
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+* [Lucid](https://www.lucidchart.com/pages/)
