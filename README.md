@@ -2,27 +2,49 @@
 
 ![hero image screenshot](assets/images/responsive-ms4.png)
 
-This is my submission for Milestone project 4. The Fit4life site is a fitness apparel, sportswear, and accessories. Offering gym clothing that is not just stylish and trendy, but comfortable, durable and perfect for your workout sessions.
+This is my submission for Milestone project 4. The Fit4life website allows access to health and wellness, sportswear, and accessories retailers. Offering gym clothing and equipments that are not just stylish and trendy, but comfortable, durable and perfect for your workout sessions.
 
 ### User Experience (UX) ###
 
-* As a user, i want to Learning about a hotel and the surrounding area through photos, user reviews, amenity details, and location info.
+* As a customer, I want to be able to search for products by category or keyword, so I can easily find and purchase the items I am interested in.
 
-* As a visitor, it's important to read the hotels reviews to decied wich one i will book.
+* As a customer, I want to be able to add products to my shopping cart, view the contents of my cart, and proceed to checkout, so I can complete my purchase quickly and easily.
 
-* As a visitor, finding hotels that match my needs and preferences, such as price, location, user ratings, amenities, and brand will be wonderful and time saving.
+* As a customer, I want to be able to create an account, save my payment information, and view my order history, so I can have a personalized shopping experience and easily track my purchases.
 
+* As a customer, I want to be able to view product details, including images, descriptions, prices, and customer reviews, so I can make informed purchasing decisions.
+
+* As a customer, I want to receive email notifications about my order status, including order confirmation, shipping updates, and delivery notifications, so I can stay informed about my purchases.
+
+* As a store owner, I want to be able to manage my product inventory, update product details, and track sales and revenue, so I can effectively manage my online store and make data-driven decisions about my business.
+
+* As an Admin user the navigation bar is displayed with a logo on all pages for easy navigation, with a burger menu on mobile devices.
+
+* As an Admin user I can add, delete and edit categories and products.
 
 ### Design ###
 
 * WireFrames:
 Desktop wireframe.
 ![Wireframe](assets/images/Website-wireframe.png)
-* Features:
-Responsive layout on mobile and tablet. Interactive Maps, email.
+
+## Features
+There are universal features that are present throughout The Fit4life website. These feature are:
+- Responsive on all device sizes - from 320px upwards to larger desktops reaching 1200px and more.
+- Fully-responsive nav bar (including mobile nav bar)
+- Mobile-friendly, adusting automatically at specific breakpoints thanks to Bootstrap easy-to-use framework and custom overriding style classes.
+- The Fit4life logo/name is seen at all times whether tucked to the left, central on reduced screen-sizes or at the top of the mobile menu on smaller and mobile devices. This is vital for brand consistency and serves as a simple way of reminding the user of the website's name. The logo is clickable and always takes the user to The Cocktail Cabinet home page (home.html).
+- Clear and obvious navbar links to other pages within the website.
+- All clickable images, buttons, links etc have a hovering cursor to signify that that element can be interacted with. 
+- A Flash text "Toast" appears at the top of the webpage whenever a user or admin completes a task - by either adding, editing or purchasing an item. 
+
+### Typography
+
+Ease of use was the primary consideration for the typography. For this reason, text was kept black, save for the header which is white with shading to make sure it is properly visible (the white header was more aesthetically pleasing on the header background). Lato was used as the primary font. This ensured that the typography was simple, familiar and easy to read so that users could navigate the application easily.
 
 ### Technologies: ###
 
+- Stripe: 
 - GitHub: [https://github.com/](https://github.com/)
   - GitHub was used to host the applications repositories.
 - GitPod: [https://www.gitpod.io/](https://www.gitpod.io/)
@@ -118,15 +140,49 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 > remove: Total 10 (delta 1), reused 10 (delta 1)
 > Unpacking objects: 100% (10/10), done.
 
+### Creating a Database with ElephantSQL
+1. Log in with GitHub to the ElephantSQL.
+2. Create new team.
+3. Click 'Create New Instance'.
+4. Choose your plan.
+5. Select your region.
+6. Click 'Review'.
+7. Click 'Create instance'.
+8. Click on the name of your database and copy the URL to your clickboard.
+
+### Creating a Heroku app
+1. Type `pip3 freeze --local > requirements.txt` into the Gitpod terminal to create a requirements.txt file.
+2. Type `echo web: python app.py > Procfile` into the terminal to create a Procfile.
+3. Commit and push the changes to Github.
+4. Login to your Heroku Account.
+5. Click 'New' -> 'Create new app'.
+6. Enter a name for your project and select your region.
+7. Click 'Create app'.
+8. Go to 'Settings', click 'Reveal Config Vars'.
+9. Add the following variables:
+    * DATABASE_URL: your ElephantSQL database url
+    * IP: 0.0.0.0
+    * PORT: 5000
+    * SECRET_KEY: your secret key
+    * DEBUG: True
+10. Click on the 'Deploy' tab.
+11. Click 'Connect to Github'.
+12. Find your depo and click 'Connect'
+13. Click 'Deploy Branch'.
+14. Click 'More' -> 'Run console'
+15. Type in `python3`
+16. Type `from fit4life import db` -> `db.create_all()` -> `exit().`
+17. Click 'Open App'.
+
+
 <h2 style="text-align: center">Credits</h2>
 
 #### Credits ####
 
 * [Unsplash.com](https://unsplash.com/)
 
-#### API ####
+* [perplexity.ai](https://www.perplexity.ai/)
 
-* [Google Map Platform](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch)
 
 #### Wireframe ####
 
