@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = [ 'https://fit4lifems4-da7da4299d96.herokuapp.com/', 'localhost']
+ALLOWED_HOSTS = [ 'fit4lifems4-da7da4299d96.herokuapp.com/', 'localhost']
 
 
 # Application definition
@@ -51,7 +51,7 @@ INSTALLED_APPS = [
 
      # Other
     'crispy_forms',
-     'storages',
+    'storages',
 ]
 
 MIDDLEWARE = [

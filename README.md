@@ -262,7 +262,7 @@ pip3 freeze > requirements.txt
 ```
 - Create a Procfile in the root directory. This tells Heroku to create a web dyno which runs gunicorn and serves our django app. Add the following to the file (making sure not to leave any blank lines underneath):
 ```
-web: gunicorn seaside_sewing.wsgi:application
+web: gunicorn fit4life.wsgi:application
 ```
 - Log into the Heroku CLI in the terminal and then run the following command to disable collectstatic. This command tells Heroku not to collect static files when we deploy:
 ``` 
