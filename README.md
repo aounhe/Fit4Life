@@ -142,7 +142,7 @@ No errors were returned from the CSS validator
 No errors or warnings shown
 
 * [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/)
-![lighthouse screenshot](assets/images/light-house-60.png)
+
 
 ### General Testing
 - Each feature was developed and tested in its own branch before being merged with master. Branches were subsequently deleted.
@@ -398,5 +398,6 @@ STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
   - [Stack Overflow](https://stackoverflow.com/)
   - [CSS Tricks](https://css-tricks.com/)
   - [perplexity.ai](https://www.perplexity.ai/)
+  - [Kaggle dataset](https://www.kaggle.com/datasets)
 
 
