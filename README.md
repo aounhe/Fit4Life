@@ -78,7 +78,7 @@ This is my submission for Milestone project 4. The Fit4life website allows acces
 
 * WireFrames:
 Desktop wireframe.
-![Wireframe](assets/images/Website-wireframe.png)
+![Wireframe](assets/images/wireframe_home.png)
 
 ## Features
 There are universal features that are present throughout The Fit4life website. These feature are:
