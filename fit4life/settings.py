@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "os.environ.get('SECRET_KEY', '')"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = True
 
 
 
@@ -35,6 +35,7 @@ ALLOWED_HOSTS = [
     "localhost",
     "fit4lifems4-da7da4299d96.herokuapp.com",
     "https://fit4lifems4-da7da4299d96.herokuapp.com/",
+    "8000-aounhe-fit4life-1ds4n110yzr.ws-eu114.gitpod.io"
 ]
 
 # Application definition

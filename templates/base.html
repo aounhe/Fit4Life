@@ -18,6 +18,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'favicon/site.webmanifest' %}">
     {% endblock %}
 
     {% block extra_css %}
@@ -40,11 +45,12 @@
   <body>
     <header class="container-fluid fixed-top">
       <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
-          <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-              <a href="{% url 'home' %}" class="nav-link main-logo-link">
+           <!--Logo-->
+           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+            <a href="{% url 'home' %}" class="nav-link  main-logo-link">
                 <h2 class="logo-font text-black my-0"><strong>Fit4Life</strong></h2>
-              </a>
-          </div>
+            </a>
+        </div>
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
               <form method="GET" action="{% url 'products' %}">
                   <div class="input-group w-100">
@@ -139,12 +145,43 @@
   {% block content %}
   {% endblock %}
 
-  {% block postloadjs %}
-  <script type="text/javascript">
+<footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="static/favicon/logo.png" alt="Company Logo">
+      </div>
+  
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <a href="https://facebook.com/yourpage" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com/company/yourcompany" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+  
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <a class="nav-link text-uppercase" href="" aria-label="Contact Page.">
+            <i class="ml-3 fa-solid fa-envelope fa-lg"></i>
+        </a>
+     </div>
+  
+      <div class="footer-subscribe">
+        <h4>Subscribe to our Newsletter</h4>
+        <form action="/subscribe" method="post">
+          <input type="email" name="email" placeholder="Enter your email">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+   
+  </footer>
+  
+
+{% block postloadjs %}
+<script>
     $('.toast').toast('show');
 </script>
-  {% endblock %}
-
-  
+{% endblock %}
 </body>
 </html>
