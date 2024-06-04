@@ -25,12 +25,12 @@
                 {% csrf_token %}
                 {{ form|crispy }}
                 <div>
-                    <a href="{% url 'products' %}" class="btn btn-danger text-uppercase rounded-0 mt-5">
-                        <i class="fa-solid fa-caret-left"></i>
+                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                        <i class="fas fa-chevron-left"></i>
                         <span>Keep Shopping</span>
                     </a>
-                    <button class="btn btn-success text-uppercase rounded-0 mt-5" type="submit">
-                        <i class="fa-solid fa-paper-plane"></i>
+                    <button class="btn btn-outline-black rounded-0 btn-lg" type="submit">
+                        <i class="fas fa-chevron-right"></i>
                         <span>Send</span>
                     </button>
                 </div>
