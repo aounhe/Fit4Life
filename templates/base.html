@@ -4,19 +4,23 @@
 <html lang="en">
   <head>
     {% block meta %}
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     {% endblock %}
 
     {% block extra_meta %}
+        <meta name="description" content="Buy Gym Wear and Nutrition online">
+        <meta name="keywords" content="gym, Protein, Gym wear">
+        <meta name="author" content="Houssem Aoun">
     {% endblock %}
-
+    
     {% block corecss %}
      <!--Favicon-->
      <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
      <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
      <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
+     <link rel="manifest" href="{% static 'favicon/site.webmanifest' %}">
      <!--GoogleFonts--> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -115,11 +119,6 @@
                 {% include 'includes/main-nav.html' %}
             </nav>
         </div>
-        <div id="delivery-banner" class="row text-center">
-            <div class="col bg-black text-white">
-                <h4 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>                
-            </div>            
-        </div>
   </header>
 
   {% if messages %}
@@ -148,33 +147,33 @@
 
   
 <!-- Footer -->
-<footer class="footer mt-auto py-3 bg-dark">
+<footer class="footer mt-auto py-3 bg-light">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <h5>About Us</h5>
+                <h5 class="logo-font font-weight-bold text-black">About Us</h5>
                 <p>Gym Clothes designed to help you become your personal best. Because when it comes to performing at your max, there should be no obstacles – least of all your gym wear..</p>
             </div>
             <div class="col-md-4">
-                <h5>Quick Links</h5>
+                <h5 class="logo-font font-weight-bold text-black">Quick Links</h5>
                 <ul class="list-unstyled">
-                    <li><a href="{% url 'home' %}" class="text-white">Home</a></li>
-                    <li><a href="{% url 'contact' %}" class="text-white">Contact</a></li>
+                    <li><a href="{% url 'home' %}" class="text-black">Home</a></li>
+                    <li><a href="{% url 'contact' %}" class="text-black">Contact</a></li>
                     
                 </ul>
             </div>
             <div class="col-md-4">
-                <h5>Contact Us</h5>
+                <h5 class="logo-font font-weight-bold text-black">Contact Us</h5>
                 <ul class="list-unstyled">
                     <li>Email: info@example.com</li>
                     <li>Phone: (123) 456-7890</li>
                 </ul>
-                <h5>Follow Us</h5>
+                <h5 class="logo-font font-weight-bold text-black">Follow Us</h5>
                 <ul class="list-unstyled list-inline">
-                    <li class="list-inline-item"><a href="https://www.facebook.com" class="text-white"><i class="fab fa-facebook-f"></i></a></li>
-                    <li class="list-inline-item"><a href="https://www.twitter.com" class="text-white"><i class="fab fa-twitter"></i></a></li>
-                    <li class="list-inline-item"><a href="https://www.instagram.com" class="text-white"><i class="fab fa-instagram"></i></a></li>
-                    <li class="list-inline-item"><a href="https://www.linkedin.com" class="text-white"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.facebook.com" aria-label="facebook" class="text-black"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.twitter.com" aria-label="Twitter" class="text-black"><i class="fab fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.instagram.com" aria-label="instagram" class="text-black"><i class="fab fa-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.linkedin.com"  aria-label="linkedin"class="text-black"><i class="fab fa-linkedin-in"></i></a></li>
                 </ul>
             </div>
         </div>

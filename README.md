@@ -142,6 +142,140 @@ No errors were returned from the CSS validator
 No errors or warnings shown
 
 * [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/)
+   ![](testing-img/lighthouse-test.jpg)
+## Code Validation
+  ### HTML
+  All templates were validated using W3C
+  - Home Page
+  ![](testing-img/html-validation.png)
+  - Bag
+  ![](testing-img/html-validation.png)
+  - Checkout
+    ![](testing-img/html-validation.png)
+  - Checkout Success
+    ![](testing-img/html-validation.png)
+  - Products
+    ![](testing-img/html-validation.png)
+  - Product Details
+    ![](testing-img/html-validation.png)
+  - Add Product
+    ![](testing-imgn/html-validation.png)
+  - Edit Products
+    ![](testing-img/html-validation.png)
+  - Contact Page
+   ![](testing-img/html-validation.png)
+  - Contact Success
+   ![](testing-img/html-validation.png)
+  - Add Review
+    ![](testing-img/html-validation.png)
+
+  ### CSS
+  - base.css
+  ![](testing-img/css-valid.png)
+  - profile.css
+  ![](testing-img/css-valid.png)
+  - checkout.css
+  ![](testing-img/css-valid.png)
+
+  ### JS
+  - stripe_elements.js
+    ![](testing-img/js1.png)
+    Warning for line 34 and 98 were ignored. I added the missing semicolon and tested again.
+    ![](testing-img/js2.png) 
+  - profile.js 
+    git ![](testing-img/profile-js-validation.png)
+
+  ### Python
+  Validated using [Code Institute Python Linter](https://fit4lifems4-da7da4299d96.herokuapp.com/)
+  - **fit4life app**
+    - setting.py
+      - Results: 
+        - `145: E501 line too long (91 > 79 characters)`
+          `148: E501 line too long (81 > 79 characters)`
+          `151: E501 line too long (82 > 79 characters)`
+          `154: E501 line too long (83 > 79 characters) `
+    - urls.py
+      - Results: All clear, no errors found 
+- **bag app**
+  - apps.py
+    - Results: All clear, no errors found 
+  - bag-tool.py
+    - Results:  All clear, no errors found 
+  - context.py
+    - Results:  All clear, no errors found 
+  - urls.py
+    - Results: All clear, no errors found
+  - views.py
+    - Results: All clear, no errors found
+- **checkout app**
+  - admin.py
+    - Results: All clear, no errors found
+  - apps.py
+    - Results: All clear, no errors found
+  - forms.py
+    - Results: All clear, no errors found
+  - models.py
+    - Results: All clear, no errors found
+  - signals.py
+    - Results: All clear, no errors found
+  - urls.py
+    - Results: All clear, no errors found
+  - views.py
+    - Results: All clear, no errors found
+  - webhook_handler.py
+    - Results: All clear, no errors found
+  - webhooks.py
+    - Results: All clear, no errors found
+- **home app**
+  - apps.py
+    - Results: All clear, no errors found
+  - urls.py
+    - Results: All clear, no errors found
+  - views.py
+    - Results: All clear, no errors found
+- **products app**
+  - admin.py
+    - Results: All clear, no errors found
+  - apps.py
+    - Results: All clear, no errors found
+  - forms.py
+    - Results: All clear, no errors found
+  - models.py
+    - Results: All clear, no errors found
+  - urls.py
+    - Results: All clear, no errors found
+  - views.py
+    - Results: All clear, no errors found
+- **profiles app**
+  - apps.py
+    - Results: All clear, no errors found
+  - forms.py
+    - Results: All clear, no errors found
+  - models.py
+    - Results: All clear, no errors found
+  - urls.py
+    - Results: All clear, no errors found
+  - views.py
+    - Results: All clear, no errors found
+- **contact app**
+  - admin.py
+    - `28: W292 no newline at end of file`
+      - New line added and tested again:
+      - Results: All clear, no errors found
+  - apps.py
+    - Results: All clear, no errors found
+  - forms.py
+    - `26: E501 line too long (82 > 79 characters)`
+      - Fixed long line and tested again:
+      - Results: All clear, no errors found
+  - models.py
+    - Results: All clear, no errors found
+  - urls.py
+    - Results: All clear, no errors found
+  - views.py
+    - Results: All clear, no errors found
+
+All `E501 line too long` results were fixed
 
 
 ### General Testing
